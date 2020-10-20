@@ -1,5 +1,5 @@
 const sidebarCategories = {
-  null: ["index", "intro/ecosystem", "intro/support"],
+  null: ["index", "intro/ecosystem", "intro/liquidity-mining", "intro/support"],
   Miner: [
     "miner/overview",
     "miner/markets",
@@ -10,13 +10,7 @@ const sidebarCategories = {
     "miner/settings",
     "miner/hummingbotstatus",
   ],
-  FAQ: [
-    "faq/liquidity-mining",
-    "faq/rewards",
-    "faq/payouts",
-    "faq/accounts&privacy",
-    "faq/eagle-club",
-  ],
+  FAQ: ["faq/liquidity-mining", "faq/accounts&privacy", "faq/eagle-club"],
   Resources: [
     "[Hummingbot YouTube](https://www.youtube.com/c/HummingbotChannel)",
     "[Hummingbot Whitepaper](https://hummingbot.io/hummingbot.pdf)",
