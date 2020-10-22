@@ -25,7 +25,7 @@ const navConfig = {
     omitLandingPage: true,
   },
   "Hummingbot Miner Docs": {
-    url: "https://docs.hummingbot.io/miner",
+    url: "https://miners-docs.hummingbot.io",
     description:
       "Documentation for Hummingbot Miner, the decentralized market making platform",
   },
@@ -43,7 +43,7 @@ const footerNavConfig = {
     rel: "noopener noreferrer",
   },
   "Hummingbot Miner": {
-    href: "https://miner.hummingbot.io",
+    href: "https://miners.hummingbot.io",
     target: "_blank",
     rel: "noopener noreferrer",
   },
@@ -71,7 +71,7 @@ module.exports = {
           "Documentation for Hummingbot Miner, the leading liquidity mining platform for order book exchanges",
         sidebarCategories,
         subtitle: "Hummingbot Miner Docs",
-        githubRepo: "coinalpha/hummingbot-miner",
+        githubRepo: "coinalpha/miners-docs",
         baseUrl: "https://miner-docs.hummingbot.io",
         baseDir: "/",
         navConfig,
