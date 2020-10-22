@@ -12,20 +12,6 @@ In liquidity mining, market makers accumulate more rewards by consistently placi
 
 For more details on the calculation, please read [Demystifying Liquidity Mining Rewards](https://hummingbot.io/blog/2019-12-liquidity-mining-rewards/).
 
-## How is performance calculated?
-
-Trading P&L =
-
-`base_asset_trade_delta` \* `base_asset_usd_exchange_rate` (at the end of query period) +
-
-`quote_asset_trade_delta` \*`quote_asset_usd_exchange_rate` (at the end of query period) -
-
-sum (`fee_amount` \* `fee_asset_usd_exchange_rate` (at time of transaction)) for each trade.
-
-Total P&L =
-
-`trading_p&l` + sum(`liquidity_mining_rewards` \* (at the end of query period))
-
 When you first log into Miner App, **Rewards** page is displayed. The **Rewards** page allows to check your:
 
 - Rewards Summary
@@ -40,11 +26,11 @@ The following screenshot displays the rewards summary.
 
 **EARNED THIS WEEK** is the current amount that you have earned for the current week. A timer counter displays the time remaining for the week.
 
-**Earn Last Week** is the total amount that you have earned last week, and displays the payout timer. The payout is paid three days after the end of week.
+**EARNED LAST WEEK** is the total amount that you have earned last week, and displays the payout timer. The payout is paid three days after the end of week.
 
 **All-TIME EARNINGS** Displays your all time earnings.
 
-To know more about your payouts, click **Payouts** tab. For details, see [Payout](payouts)
+To know more about your payouts, click **Payouts** tab. For details, see [Payouts](payouts)
 
 ## Latest Earnings
 
@@ -60,10 +46,7 @@ In each weekly epoch, the lump-sum weekly reward is distributed equally across e
 
 For each snapshot, half the reward is allocated to the bid-side of the order book, and the other half is allocated to the ask side of the order book. We mandate this 50/50 split in order to deter participants from using our system to manipulate price in one direction or another. If there are no eligible orders submitted for a specific snapshot, the amount of rewards allocated for that snapshot will roll over and be added to the reward amount for the subsequent snapshot.
 
-!!! note "Earning rewards in mulitple markets"
-You can run different instances of Hummingbot or your own software to earn rewards in multiple markets simultaneously. And the reward allocations for each market are calculated independently, so your earnings in one market won't affect other markets.
-
-To know more on how the rewards are calculated, see [Liquidity mining rewards calculation](/faq/liquidity-mining)
+> **Note:** You can run different instances of Hummingbot or your own software to earn rewards in multiple markets simultaneously. And the reward allocations for each market are calculated independently, so your earnings in one market won't affect other markets. To know more on how the rewards are calculated, see [Liquidity mining rewards calculation](/faq/liquidity-mining)
 
 ## Checking Snapshot Rewards Per Min
 
