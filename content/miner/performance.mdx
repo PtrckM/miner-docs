@@ -2,7 +2,7 @@
 title: Performance
 ---
 
-Performance allows you to track your P&L and trade volume chart over time(last hour, last day, last week) for each liquidity campaign that you particpate in.
+Performance allows you to track your P&L and trade volume chart over time(last hour/last day/last week) for each liquidity campaign that you particpate in.
 
 The following screenshot displays the performance summary.
 
@@ -13,5 +13,20 @@ To check performance:
 1. Select desired market pair from the drop-down list.
 2. Select the duration from the drop-down list.
 3. Click **Calculate**. The chart, trade summary and P&L table will displayed the statistics.
+4. Click **Trade volume chart**, the volume of trades that were filled/executed over the duration(last hour/last day/last week) will be displayed.
 
-For more infomation about the performance, click [FAQ](/faq/rewards)
+![performance](/img/tradevolume.png)
+
+## How is performance calculated?
+
+Trading P&L =
+
+`base_asset_trade_delta` \* `base_asset_usd_exchange_rate` (at the end of query period) +
+
+`quote_asset_trade_delta` \*`quote_asset_usd_exchange_rate` (at the end of query period) -
+
+sum (`fee_amount` \* `fee_asset_usd_exchange_rate` (at time of transaction)) for each trade.
+
+Total P&L =
+
+`trading_p&l` + sum(`liquidity_mining_rewards` \* (at the end of query period))
