@@ -2,15 +2,15 @@ require("dotenv").config();
 
 const sidebarCategories = {
   null: ["index", "intro/ecosystem", "intro/liquidity-mining", "intro/support"],
-  Miner: [
-    "miner/overview",
-    "miner/markets",
-    "miner/rewards",
-    "miner/payouts",
-    "miner/performance",
-    "miner/leaderboard",
-    "miner/settings",
-    "miner/hummingbotstatus",
+  "Miner App": [
+    "miner-app/overview",
+    "miner-app/markets",
+    "miner-app/rewards",
+    "miner-app/payouts",
+    "miner-app/performance",
+    "miner-app/leaderboard",
+    "miner-app/settings",
+    "miner-app/hummingbotstatus",
   ],
   FAQ: ["faq/liquidity-mining", "faq/accounts&privacy", "faq/eagle-club"],
   Resources: [
@@ -27,7 +27,7 @@ const navConfig = {
     omitLandingPage: true,
   },
   "Hummingbot Miner Docs": {
-    url: "https://miners-docs.hummingbot.io",
+    url: "https://docs.hummingbot.io/miner",
     description:
       "Documentation for Hummingbot Miner, the decentralized market making platform",
   },
@@ -74,7 +74,7 @@ module.exports = {
         sidebarCategories,
         subtitle: "Hummingbot Miner Docs",
         githubRepo: "coinalpha/miners-docs",
-        baseUrl: "https://miner-docs.hummingbot.io",
+        baseUrl: "https://docs.hummingbot.io/miner",
         baseDir: "/",
         navConfig,
         footerNavConfig,
