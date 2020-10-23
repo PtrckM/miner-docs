@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const sidebarCategories = {
   null: ["index", "intro/ecosystem", "intro/liquidity-mining", "intro/support"],
   Miner: [
@@ -83,8 +85,8 @@ module.exports = {
          * @todo Replace these two keys with own keys
          * @see https://github.com/apollographql/gatsby-theme-apollo/tree/master/packages/gatsby-theme-apollo-docs#algolia-configuration
          */
-        algoliaApiKey: "768e823959d35bbd51e4b2439be13fb7",
-        algoliaIndexName: "apollodata",
+        algoliaApiKey: process.env.GATSBY_ALGOLIA_API_KEY,
+        algoliaIndexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
       },
     },
     {
