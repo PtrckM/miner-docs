@@ -62,7 +62,7 @@ module.exports = {
     headerButtonLink: "https://miners.hummingbot.io/",
     discordUrl: "https://discord.hummingbot.io",
   },
-  pathPrefix: "/",
+  pathPrefix: "/miner",
   plugins: [
     {
       resolve: "gatsby-theme-apollo-docs",
