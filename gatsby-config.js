@@ -1,5 +1,5 @@
 const sidebarCategories = {
-  null: ["index", "intro/ecosystem", "intro/liquidity-mining", "intro/support"],
+  null: ["index", "intro/liquidity-mining", "intro/support"],
   Miner: [
     "miner/overview",
     "miner/markets",
