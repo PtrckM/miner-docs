@@ -80,7 +80,7 @@ module.exports = {
         footerNavConfig,
         twitterHandle: "hummingbot_io",
         youtubeUrl: "https://www.youtube.com/channel/UCxzzdEnDRbylLMWmaMjywOA",
-        logoLink: "http://miner.hummingbot.io",
+        logoLink: "https://docs.hummingbot.io",
         /**
          * @todo Replace these two keys with own keys
          * @see https://github.com/apollographql/gatsby-theme-apollo/tree/master/packages/gatsby-theme-apollo-docs#algolia-configuration
