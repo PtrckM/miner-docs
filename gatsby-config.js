@@ -1,4 +1,7 @@
+require("dotenv").config();
+
 const sidebarCategories = {
+<<<<<<< HEAD
   null: ["index", "intro/liquidity-mining", "intro/support"],
   Miner: [
     "miner/overview",
@@ -9,6 +12,18 @@ const sidebarCategories = {
     "miner/leaderboard",
     "miner/settings",
     "miner/hummingbotstatus",
+=======
+  null: ["index", "intro/ecosystem", "intro/liquidity-mining", "intro/support"],
+  "Miner App": [
+    "miner-app/overview",
+    "miner-app/markets",
+    "miner-app/rewards",
+    "miner-app/payouts",
+    "miner-app/performance",
+    "miner-app/leaderboard",
+    "miner-app/settings",
+    "miner-app/hummingbotstatus",
+>>>>>>> 4e101ac087efab0ceee1e6421d0f45ca17c45cc9
   ],
   FAQ: ["faq/liquidity-mining", "faq/accounts&privacy", "faq/eagle-club"],
   Resources: [
@@ -25,7 +40,7 @@ const navConfig = {
     omitLandingPage: true,
   },
   "Hummingbot Miner Docs": {
-    url: "https://miners-docs.hummingbot.io",
+    url: "https://docs.hummingbot.io/miner",
     description:
       "Documentation for Hummingbot Miner, the decentralized market making platform",
   },
@@ -60,7 +75,7 @@ module.exports = {
     headerButtonLink: "https://miners.hummingbot.io/",
     discordUrl: "https://discord.hummingbot.io",
   },
-  pathPrefix: "/",
+  pathPrefix: "/miner",
   plugins: [
     {
       resolve: "gatsby-theme-apollo-docs",
@@ -72,19 +87,19 @@ module.exports = {
         sidebarCategories,
         subtitle: "Hummingbot Miner Docs",
         githubRepo: "coinalpha/miners-docs",
-        baseUrl: "https://miner-docs.hummingbot.io",
+        baseUrl: "https://docs.hummingbot.io/miner",
         baseDir: "/",
         navConfig,
         footerNavConfig,
         twitterHandle: "hummingbot_io",
         youtubeUrl: "https://www.youtube.com/channel/UCxzzdEnDRbylLMWmaMjywOA",
-        logoLink: "http://miner.hummingbot.io",
+        logoLink: "https://docs.hummingbot.io",
         /**
          * @todo Replace these two keys with own keys
          * @see https://github.com/apollographql/gatsby-theme-apollo/tree/master/packages/gatsby-theme-apollo-docs#algolia-configuration
          */
-        algoliaApiKey: "768e823959d35bbd51e4b2439be13fb7",
-        algoliaIndexName: "apollodata",
+        algoliaApiKey: process.env.GATSBY_ALGOLIA_API_KEY,
+        algoliaIndexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
       },
     },
     {
