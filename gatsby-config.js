@@ -1,18 +1,6 @@
 require("dotenv").config();
 
 const sidebarCategories = {
-<<<<<<< HEAD
-  null: ["index", "intro/liquidity-mining", "intro/support"],
-  Miner: [
-    "miner/overview",
-    "miner/markets",
-    "miner/rewards",
-    "miner/payouts",
-    "miner/performance",
-    "miner/leaderboard",
-    "miner/settings",
-    "miner/hummingbotstatus",
-=======
   null: ["index", "intro/ecosystem", "intro/liquidity-mining", "intro/support"],
   "Miner App": [
     "miner-app/overview",
@@ -23,7 +11,6 @@ const sidebarCategories = {
     "miner-app/leaderboard",
     "miner-app/settings",
     "miner-app/hummingbotstatus",
->>>>>>> 4e101ac087efab0ceee1e6421d0f45ca17c45cc9
   ],
   FAQ: ["faq/liquidity-mining", "faq/accounts&privacy", "faq/eagle-club"],
   Resources: [
