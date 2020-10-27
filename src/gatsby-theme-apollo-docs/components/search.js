@@ -154,6 +154,8 @@ export default function Search(props) {
         // debug: true, // keeps the results list open
         algoliaOptions: {
           hitsPerPage: 10,
+          // uncomment to limit results to miner-docs only
+          // facetFilters: ["tags:miner"]
         },
       });
     }

@@ -1,5 +1,22 @@
+require("dotenv").config();
+
 const sidebarCategories = {
   null: ["index", "intro/ecosystem", "intro/support"],
+  "Miner App": [
+    "miner-app/overview",
+    "miner-app/markets",
+    "miner-app/rewards",
+    "miner-app/payouts",
+    "miner-app/performance",
+    "miner-app/leaderboard",
+    "miner-app/settings",
+    "miner-app/hummingbotstatus",
+  ],
+  FAQ: ["faq/liquidity-mining", "faq/accounts&privacy", "faq/eagle-club"],
+  Resources: [
+    "[Hummingbot YouTube](https://www.youtube.com/c/HummingbotChannel)",
+    "[Hummingbot Whitepaper](https://hummingbot.io/hummingbot.pdf)",
+  ],
 };
 
 const navConfig = {
@@ -28,7 +45,7 @@ const footerNavConfig = {
     rel: "noopener noreferrer",
   },
   "Hummingbot Miner": {
-    href: "https://miner.hummingbot.io",
+    href: "https://miners.hummingbot.io",
     target: "_blank",
     rel: "noopener noreferrer",
   },
@@ -45,7 +62,7 @@ module.exports = {
     headerButtonLink: "https://miners.hummingbot.io/",
     discordUrl: "https://discord.hummingbot.io",
   },
-  pathPrefix: "/",
+  pathPrefix: "/miner",
   plugins: [
     {
       resolve: "gatsby-theme-apollo-docs",
@@ -56,20 +73,20 @@ module.exports = {
           "Documentation for Hummingbot Miner, the leading liquidity mining platform for order book exchanges",
         sidebarCategories,
         subtitle: "Hummingbot Miner Docs",
-        githubRepo: "coinalpha/hummingbot-miner",
-        baseUrl: "https://miner-docs.hummingbot.io",
+        githubRepo: "coinalpha/miners-docs",
+        baseUrl: "https://docs.hummingbot.io/miner",
         baseDir: "/",
         navConfig,
         footerNavConfig,
         twitterHandle: "hummingbot_io",
         youtubeUrl: "https://www.youtube.com/channel/UCxzzdEnDRbylLMWmaMjywOA",
-        logoLink: "http://miner.hummingbot.io",
+        logoLink: "https://docs.hummingbot.io",
         /**
          * @todo Replace these two keys with own keys
          * @see https://github.com/apollographql/gatsby-theme-apollo/tree/master/packages/gatsby-theme-apollo-docs#algolia-configuration
          */
-        algoliaApiKey: "768e823959d35bbd51e4b2439be13fb7",
-        algoliaIndexName: "apollodata",
+        algoliaApiKey: process.env.GATSBY_ALGOLIA_API_KEY,
+        algoliaIndexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
       },
     },
     {
